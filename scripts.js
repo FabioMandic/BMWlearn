@@ -26,10 +26,10 @@ const bmwModels = [
 ];
 
 
-// Funkcija za prikazivanje modela u tablici
+
 function populateTable(models) {
     const modelsTableBody = document.querySelector("#modelsTable tbody");
-    modelsTableBody.innerHTML = ''; // Clear the table before adding rows
+    modelsTableBody.innerHTML = ''; 
 
     models.forEach(model => {
         const row = document.createElement('tr');
@@ -43,32 +43,32 @@ function populateTable(models) {
     });
 }
 
-// Filter and search functionality
+
 document.addEventListener("DOMContentLoaded", function () {
     const vehicleTypeSelect = document.getElementById("vehicleType");
     const searchNameInput = document.getElementById("searchName");
 
-    // Filtriranje modela
+    
     function filterTable() {
         const selectedType = vehicleTypeSelect.value.toLowerCase();
         const searchQuery = searchNameInput.value.toLowerCase();
 
-        // Filteriranje modela prema vrsti i pretrazi
+        
         const filteredModels = bmwModels.filter(model => {
             const matchesType = selectedType === "all" || model.type.toLowerCase() === selectedType;
             const matchesSearch = model.name.toLowerCase().includes(searchQuery);
             return matchesType && matchesSearch;
         });
 
-        // Popunjavanje tablice s filtriranim modelima
+        
         populateTable(filteredModels);
     }
 
-    // Event listeners za filtere
+    
     vehicleTypeSelect.addEventListener("change", filterTable);
     searchNameInput.addEventListener("input", filterTable);
 
-    // Pozivanje filtera odmah pri učitavanju stranice
+    
     filterTable();
 });
 
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-// Popis BMW modela
+
 const bmwImages = [
     "BMWserija1", "BMWserija2Cabrio", "BMWserija2Coupe", "BMWserija2GranTourer",
     "BMWserija3", "BMWserija3Touring", "BMWserija4Cabrio", "BMWserija4Coupe",
@@ -90,7 +90,7 @@ const bmwImages = [
 ];
 
 
-// Prikazivanje slučajne slike
+
 document.getElementById("randomBtn").addEventListener("click", function() {
     const randomImage = bmwImages[Math.floor(Math.random() * bmwImages.length)];
     document.getElementById("modelToGuess").innerHTML = `<img src="images/${randomImage}.png" alt="${randomImage}" style="width: 300px;">`;
@@ -99,7 +99,7 @@ document.getElementById("randomBtn").addEventListener("click", function() {
 
 
 
-// Provera pogotka korisnika
+
 document.getElementById("submitGuess").addEventListener("click", function() {
     const userGuess = document.getElementById("userGuess").value.trim();
     const displayedImage = document.querySelector("#modelToGuess img").alt;
@@ -110,5 +110,3 @@ document.getElementById("submitGuess").addEventListener("click", function() {
         document.getElementById("result").textContent = `Incorrect! It was ${displayedImage}.`;
     }
 });
-
-
