@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+    <title>BMW Learning - Guess the Model</title>
+</head>
+
+<body>
+
+    <header>
+        <img src="images/BMWlogo.jpeg" alt="BMW Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="models.html">BMW Models</a></li>
+                <li><a href="company.html">BMW Company</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="list-models">
+        <h1>BMW Models</h1>
+
+        <!-- Filter i pretraga -->
+        <div>
+            <label for="vehicleType">Select Vehicle Type:</label>
+            <select id="vehicleType">
+                <option value="all">All Types</option>
+                <option value="Sedan">Sedan</option>
+                <option value="SUV">SUV</option>
+                <option value="Roadster">Roadster</option>
+                <option value="Luxury">Luxury</option>
+            </select>
+
+            <label for="searchName">Search by Name:</label>
+            <input type="text" id="searchName" placeholder="Enter model name">
+        </div>
+
+        <!-- Tablica modela -->
+        <table id="modelsTable">
+            <thead>
+                <tr>
+                    <th>Model</th>
+                    <th>Image</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>BMW Serija 1</td>
+                    <td><img src="images/BMWserija1.png" alt="BMW Serija 1" style="width: 150px;"></td>
+                    <td>Sedan</td>
+                    <td>Compact sedan offering dynamic performance.</td>
+                </tr>
+                <tr>
+                    <td>BMW Serija 2 Cabrio</td>
+                    <td><img src="images/BMWserija2Cabrio.png" alt="BMW Serija 2 Cabrio" style="width: 150px;"></td>
+                    <td>Roadster</td>
+                    <td>Sporty convertible for open-air driving.</td>
+                </tr>
+                <tr>
+                    <td>BMW Serija 2 Coupe</td>
+                    <td><img src="images/BMWserija2Coupe.png" alt="BMW Serija 2 Coupe" style="width: 150px;"></td>
+                    <td>Sedan</td>
+                    <td>Dynamic coupe with sleek design.</td>
+                </tr>
+                <tr>
+                    <td>BMW Serija 2 Gran Tourer</td>
+                    <td><img src="images/BMWserija2GranTourer.png" alt="BMW Serija 2 Gran Tourer" style="width: 150px;"></td>
+                    <td>Sedan</td>
+                    <td>Spacious and versatile family car.</td>
+                </tr>
+                <tr>
+                    <td>BMW Serija 3</td>
+                    <td><img src="images/BMWserija3.png" alt="BMW Serija 3" style="width: 150px;"></td>
+                    <td>Sedan</td>
+                    <td>Elegant sedan offering premium comfort.</td>
+                </tr>
+                <tr>
+                    <td>BMW Serija 3 Touring</td>
+                    <td><img src="images/BMWserija3Touring.png" alt="BMW Serija 3 Touring" style="width: 150px;"></td>
+                    <td>Sedan</td>
+                    <td>Practical wagon with a luxury touch.</td>
+                </tr>
+                <tr>
+                    <td>BMW Serija 4 Cabrio</td>
+                    <td><img src="images/BMWserija4Cabrio.png" alt="BMW Serija 4 Cabrio" style="width: 150px;"></td>
+                    <td>Roadster</td>
+                    <td>Convertible with powerful performance.</td>
+                </tr>
+                <tr>
+                    <td>BMW Serija 4 Coupe</td>
+                    <td><img src="images/BMWserija4Coupe.png" alt="BMW Serija 4 Coupe" style="width: 150px;"></td>
+                    <td>Sedan</td>
+                    <td>Stylish coupe with sporty handling.</td>
+                </tr>
+
+                <tr>
+                    <td>BMW Serija 4 Gran Coupe</td>
+                    <td><img src="images/BMWserija4GranCoupe.png" alt="BMW Serija 4 Gran Coupe" style="width: 150px;"></td>
+                    <td>Sedan</td>
+                    <td>New type gran coupe with sporty handling.</td>
+                </tr>
+
+                <tr>
+                    <td>BMW Serija 5</td>
+                    <td><img src="images/BMWserija5.png" alt="BMW Serija 5" style="width: 150px;"></td>
+                    <td>Sedan</td>
+                    <td>Mid-size luxury sedan with advanced tech.</td>
+                </tr>
+                <tr>
+                    <td>BMW Serija 6</td>
+                    <td><img src="images/BMWserija6.png" alt="BMW Serija 6" style="width: 150px;"></td>
+                    <td>Sedan</td>
+                    <td>Luxury type of new line seria 6.</td>
+                </tr>
+                <tr>
+                    <td>BMW Serija 7</td>
+                    <td><img src="images/BMWserija7.png" alt="BMW Serija 7" style="width: 150px;"></td>
+                    <td>Luxury</td>
+                    <td>Flagship luxury sedan with advanced technology.</td>
+                </tr>
+                <tr>
+                    <td>BMW Serija 8 Cabrio</td>
+                    <td><img src="images/BMWserija8Cabrio.png" alt="BMW Serija 8 cabrio" style="width: 150px;"></td>
+                    <td>Roadster</td>
+                    <td>Luxury cabrio with advanced technology.</td>
+                </tr>
+                <tr>
+                    <td>BMW Serija 8 Coupe</td>
+                    <td><img src="images/BMWserija8Coupe.png" alt="BMW Serija 8 coupe" style="width: 150px;"></td>
+                    <td>Sedan</td>
+                    <td>Luxury coupe offering dynamic performance.</td>
+                </tr>
+                <tr>
+                    <td>BMW Serija 8 Gran Coupe</td>
+                    <td><img src="images/BMWserija8GranCoupe.png" alt="BMW Serija 8 gran coupe" style="width: 150px;"></td>
+                    <td>Sedan</td>
+                    <td>Elegant sedan offering premium comfort.</td>
+                </tr>
+
+                <tr>
+                    <td>BMW X1</td>
+                    <td><img src="images/BMWx1.png" alt="BMW X1" style="width: 150px;"></td>
+                    <td>SUV</td>
+                    <td>Compact SUV for urban adventures.</td>
+                </tr>
+                <tr>
+                    <td>BMW X2</td>
+                    <td><img src="images/BMWx2.png" alt="BMW X2" style="width: 150px;"></td>
+                    <td>SUV</td>
+                    <td>Stylish and sporty crossover SUV.</td>
+                </tr>
+                <tr>
+                    <td>BMW X3</td>
+                    <td><img src="images/BMWx3.png" alt="BMW X3" style="width: 150px;"></td>
+                    <td>SUV</td>
+                    <td>Versatile SUV with premium comfort.</td>
+                </tr>
+                <tr>
+                    <td>BMW X4</td>
+                    <td><img src="images/BMWx4.png" alt="BMW X4" style="width: 150px;"></td>
+                    <td>SUV</td>
+                    <td>Coupe-style SUV with dynamic looks.</td>
+                </tr>
+                <tr>
+                    <td>BMW X5</td>
+                    <td><img src="images/BMWx5.png" alt="BMW X5" style="width: 150px;"></td>
+                    <td>SUV</td>
+                    <td>A luxurious, powerful, and spacious mid-size SUV with advanced tech.</td>
+                </tr>
+                <tr>
+                    <td>BMW X6</td>
+                    <td><img src="images/BMWx6.png" alt="BMW X6" style="width: 150px;"></td>
+                    <td>SUV</td>
+                    <td> A sporty, coupe-style SUV with dynamic performance and premium features.</td>
+                </tr>
+                <tr>
+                    <td>BMW X7</td>
+                    <td><img src="images/BMWx7.png" alt="BMW X7" style="width: 150px;"></td>
+                    <td>SUV</td>
+                    <td> A flagship luxury SUV with three-row seating and superior comfort.</td>
+                </tr>
+                <tr>
+                    <td>BMW Z4</td>
+                    <td><img src="images/BMWz4.png" alt="BMW Z4" style="width: 150px;"></td>
+                    <td>Roadster</td>
+                    <td>Elegant roadster for thrilling experiences.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>

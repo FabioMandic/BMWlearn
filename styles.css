@@ -1,0 +1,414 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url("images/BMWbackground1.jpg") no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background-color: #000000;
+    padding: 0px 0;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+    margin-left: 15px;
+}
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ececec;
+    color: #000000;
+}
+/*-----------------main------------------*/
+.main-content {
+    display: flex;
+    flex: 1;
+    position: relative;
+}
+
+.guess-section {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+}
+
+.guess-section h1 {
+    margin-bottom: 10px;
+}
+
+.styled-button {
+    background-color: #0071c5;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    margin: 10px 0;
+}
+
+.styled-button:hover {
+    transform: scale(1.1);
+}
+
+#modelToGuess {
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.guess-input {
+    margin-top: 20px;
+}
+
+#userGuess {
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #c4c4c4;
+    margin-right: 10px;
+}
+
+.answer-list {
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #ddd;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    justify-content: flex-start;
+}
+
+.answer-list h3 {
+    margin-bottom: 8px;
+}
+
+.answer-list ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.answer-list ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------News kartica----------------- */
+.announcement {
+    background-color: #005b96; 
+    color: #fff;
+    padding: 16px 8px; 
+    text-align: center;
+    margin-bottom: 40px; 
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.announcement h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.announcement p {
+    font-size: 1.3em;
+    margin-top: 0;
+    font-style: italic;
+}
+
+/* Stilizacija za kartice */
+.car-article {
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.car-article:hover {
+    transform: scale(1.05);
+}
+
+.car-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.car-image {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ddd;
+}
+
+.car-text {
+    padding: 15px;
+}
+
+.car-text h2 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.car-text p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Poravnanje kartica u sredinu stranice */
+.car-article-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------- History page ----------------------------*/
+.car-history-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+.car-history {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 800px;
+}
+
+.car-history:nth-child(odd) {
+    flex-direction: row;
+}
+
+.car-history:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.car-history-image {
+    flex-shrink: 0;
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.car-history p {
+    margin: 0;
+    flex-grow: 1;
+    text-align: justify;
+    line-height: 1.8;
+    color: #cabdbd;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Stilizacija za <section> i njegove elemente */
+/*-----------------------------------BMW MODELS-----------------------*/
+.list-models {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    color: #000;
+}
+
+.list-models-h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Stilizacija za filter i pretragu */
+.list-models-div {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #000;
+}
+
+select, input[type="text"] {
+    padding: 8px;
+    margin-right: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    color: #000; /* Dodano da se osigura crna boja teksta */
+    background-color: #fff;
+}
+
+/* Stilizacija za tablicu */
+#modelsTable {
+    width: 100%;
+    max-width: 100%; /* Osigurava da tablica ne izlazi izvan svog container-a */
+    min-width: 900px; /* Osigurava minimalnu širinu tablice, bez obzira na broj redova */
+    border-collapse: collapse;
+    margin: 0 auto;
+    color: #000;
+    background-color: #fff;
+}
+
+#modelsTable th, #modelsTable td {
+    border: 1px solid #000; /* Crne linije za razdvajanje svih ćelija */
+    padding: 10px;
+    text-align: center;
+    min-width: 150px; /* Osigurava da svaka kolona ima minimalnu širinu */
+}
+
+#modelsTable tr {
+    border: 1px solid #000; /* Horizontalne crte između redova */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------BMW COMPANY-----------------------*/
+.company {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Slika s lijeve strane */
+.company img {
+    max-width: 40%;
+    height: 540px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Tekst s desne strane slike */
+.company .company-text {
+    flex: 1;
+    text-align: justify;
+}
+
+.company .company-text p {
+    margin: 15px 0;
+    padding: 10px 15px;
+    color: #cac6c6;
+    background-color: #000;
+    border-left: 5px solid #ddd;
+    border-radius: 5px;
+}
+
+.company .company-text hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 20px 0;
+}
